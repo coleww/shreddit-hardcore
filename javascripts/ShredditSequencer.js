@@ -24,9 +24,9 @@
     this.$keys = KeyboardUI.$keys;
 //THESE BROS SHOULD BE OWN OBJECT, FOR AND BY THEMSELVES.
     this.samples = {
-      kick: new Wad({source: 'samples/kick.wav'}),
-      hat: new Wad({source: 'samples/chh.wav'}),
-      snare: new Wad({source: 'samples/snare.wav'}),
+      kick: new Wad({source: '../samples/ltom.wav'}),
+      hat: new Wad({source: '../samples/cym.wav'}),
+      snare: new Wad({source: '../samples/clap.wav'}),
       bass: new Wad({source: 'square', volume: 0.1,
         filter: {
           type: 'lowpass',
