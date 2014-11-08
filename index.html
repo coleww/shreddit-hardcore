@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>SHREDDIT HARD CORE YALL</title>
+    <link href="./stylesheets/grid-seq.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="grid">
+      <div class="buttons">
+        <span class="banner">SHREDDIT SEQUENCER</span>
+        <span class="key msgKey" id="msgSpace">&nbsp;</span>
+        <br />
+        <span class="key medKey">bass</span>
+        <span class="key charKey grid-key" id="one">1</span>
+        <span class="key charKey grid-key" id="two">2</span>
+        <span class="key charKey grid-key" id="three">3</span>
+        <span class="key charKey grid-key" id="four">4</span>
+        <span class="key charKey grid-key" id="five">5</span>
+        <span class="key charKey grid-key" id="six">6</span>
+        <span class="key charKey grid-key" id="seven">7</span>
+        <span class="key charKey grid-key" id="eight">8</span>
+        <span class="key charKey bass-key" id="nine">9</span>
+        <span class="key charKey bass-key" id="zero">0</span>
+        <span class="key charKey bass-key" id="minus">-</span>
+        <span class="key charKey bass-key" id="equals">=</span>
+        <span class="key charKey" id="">&nbsp;</span>
+        <br />
+        <span class="key medKey">snare</span>
+        <span class="key charKey grid-key" id="q">q</span>
+        <span class="key charKey grid-key" id="w">w</span>
+        <span class="key charKey grid-key" id="e">e</span>
+        <span class="key charKey grid-key" id="r">r</span>
+        <span class="key charKey grid-key" id="t">t</span>
+        <span class="key charKey grid-key" id="y">y</span>
+        <span class="key charKey grid-key" id="u">u</span>
+        <span class="key charKey grid-key" id="i">i</span>
+        <span class="key charKey bass-key" id="o">o</span>
+        <span class="key charKey bass-key" id="p">p</span>
+        <span class="key charKey bass-key" id="openBracket">[</span>
+        <span class="key charKey bass-key" id="closeBracket">]</span>
+        <span class="key charKey" id="">&nbsp;</span>
+        <br />
+        <span class="key medKey">hat</span>
+        <span class="key charKey grid-key" id="a">a</span>
+        <span class="key charKey grid-key" id="s">s</span>
+        <span class="key charKey grid-key" id="d">d</span>
+        <span class="key charKey grid-key" id="f">f</span>
+        <span class="key charKey grid-key" id="g">g</span>
+        <span class="key charKey grid-key" id="h">h</span>
+        <span class="key charKey grid-key" id="j">j</span>
+        <span class="key charKey grid-key" id="k">k</span>
+        <span class="key charKey" id="l">l</span>
+        <span class="key charKey arp-key" id="semicolon">;</span>
+        <span class="key charKey arp-key" id="apostrophe">'</span>
+        <span class="key charKey arp-key" id="up">/\</span>
+        <span class="key charKey" id="">&nbsp;</span>
+        <br />
+        <span class="key medKey">kick</span>
+        <span class="key charKey grid-key" id="z">z</span>
+        <span class="key charKey grid-key" id="x">x</span>
+        <span class="key charKey grid-key" id="c">c</span>
+        <span class="key charKey grid-key" id="v">v</span>
+        <span class="key charKey grid-key" id="b">b</span>
+        <span class="key charKey grid-key" id="n">n</span>
+        <span class="key charKey grid-key" id="m">m</span>
+        <span class="key charKey grid-key" id="comma">,</span>
+        <span class="key charKey" id="period">.</span>
+        <span class="key charKey" id="slash">/</span>
+        <span class="key charKey arp-key" id="left">&lt;</span>
+        <span class="key charKey arp-key" id="down">\/</span>
+        <span class="key charKey arp-key" id="right">&gt;</span>
+        <br />
+        <span class="medSpacer">&nbsp;</span>
+        <span class="beatMark" id="beat1"><b>/!\</b></span>
+        <span class="beatMark" id="beat2"><b>/!\</b></span>
+        <span class="beatMark" id="beat3"><b>/!\</b></span>
+        <span class="beatMark" id="beat4"><b>/!\</b></span>
+        <span class="beatMark" id="beat5"><b>/!\</b></span>
+        <span class="beatMark" id="beat6"><b>/!\</b></span>
+        <span class="beatMark" id="beat7"><b>/!\</b></span>
+        <span class="beatMark" id="beat8"><b>/!\</b></span>
+      </div>
+      <div class="volume">
+        <span class="slider-opt">arp</span>
+        <input type="range" id="arpVol" min="0" max="1" step=".05" value="0.3">
+        <br />
+        <span class="slider-opt">bass</span>
+        <input type="range" id="bassVol" min="0" max="1" step=".05" value="0.1">
+        <br />
+        <span class="slider-opt">snare</span>
+        <input type="range" id="snareVol" min="0" max="1" step=".05" value="0.5">
+        <br />
+        <span class="slider-opt">hat</span>
+        <input type="range" id="hatVol" min="0" max="1" step=".05" value="0.5">
+        <br />
+        <span class="slider-opt">kick</span>
+        <input type="range" id="kickVol" min="0" max="1" step=".05" value="0.5">
+      </div>
+      <div class="fill"></div>
+  </div>
+    <script src="vendor/jquery-1.11.0.min.js"></script>
+    <script src="vendor/jquery-ui-1.10.4.custom.js"></script>
+    <script src="vendor/jquery.mousewheel.js"></script>
+    <script src="vendor/keymaster.js"></script>
+    <script src="vendor/wad.js"></script>
+    <script src="javascripts/keyboardUI.js"></script>
+    <script src="javascripts/keyboardKeyMap.js"></script>
+    <script src="javascripts/ShredditController.js"></script>
+    <script src="javascripts/ShredditSequencer.js"></script>
+    <script>
+	    new Shreddit.Sequencer().startSeq();
+    </script>
+  </body>
+</html>

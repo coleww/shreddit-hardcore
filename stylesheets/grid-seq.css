@@ -1,0 +1,111 @@
+/*for the sequencer ticks at the bottom*/
+.beatMark {
+  width: 17px;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  text-align:center;
+  opacity: 0;
+}
+
+.beat {
+  color: red;
+  opacity: 1;
+}
+
+.key {
+  border: 1px solid black;
+  border-radius:5px;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  text-align:center;
+  background-color: white;
+}
+
+/*for pads that are in the sequence grid*/
+.grid-key {
+  background-color: lightgray;
+}
+
+.bass-key {
+  background-color: yellow;
+}
+
+.arp-key {
+  background-color: lightblue;
+}
+
+.medKey {
+  width: 40px;
+  background-image:url("woodgrainB.jpg");
+  color: white;
+}
+
+.medSpacer {
+  width: 71px;
+  display: inline-block;
+}
+
+.msgKey {
+  width: 305px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  background-image:url("woodgrainD.jpg");
+  color: lightgreen;
+}
+
+.charKey {
+  width: 15px;
+}
+
+.active {
+  background-color: lightgreen;
+}
+
+.grid {
+  margin: 50px;
+  background-image:url("woodgrain.jpg");
+  padding: 20px;
+  padding-bottom: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 960px;
+  position:relative;
+}
+
+.banner {
+  color: black;
+  margin: -5px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+
+.slider-opt {
+  width: 50px;
+  display: inline-block;
+  text-align: right;
+}
+
+.volume {
+  display:inline;
+  float: left;
+  background-color: white;
+  border-radius: 5px;
+  background-image:url("woodgrainC.jpg");
+  position:absolute;
+  bottom: 55;
+  height: 145px;
+  color: white;
+}
+
+.buttons {
+  display:inline;
+  float: left;
+  margin-right: 25px;
+}
+
+.fill {
+  clear: both;
+}
